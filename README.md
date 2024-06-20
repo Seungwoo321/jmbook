@@ -11,3 +11,5 @@
 - [시계 맞추기 (문제 ID: CLOCKSYNC, 난이도: 중)](/chapter6/CLOCKSYNC/solution.js)
 
 ## 7. 분할정복
+
+- [행렬의 거듭제곱을 구하는 분할 정복 알고리즘](/chapter7/squareMatrix.js)
