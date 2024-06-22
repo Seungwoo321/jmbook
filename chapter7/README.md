@@ -4,3 +4,7 @@
 
 - [2740 행렬 곱셈 - 실버4](https://github.com/Seungwoo321/boj/tree/master/silver/2740)
 - [10830 행렬 제곱 - 골드4](https://github.com/Seungwoo321/boj/tree/master/gold/10830)
+
+## 카라츠바의 빠른 정수 곱셈 알고리즘
+
+- [22193 Multiply - 브론즈5](https://www.acmicpc.net/problem/22193)
