@@ -15,3 +15,5 @@
 - [행렬의 거듭제곱을 구하는 분할 정복 알고리즘](/chapter7/squareMatrix.js)
 - [두 큰 수를 곱하는 O(n^2) 시간 알고리즘](/chapter7/multipy.js)
 - [카라츠바의 빠른 정수 곱셈 알고리즘](/chapter7/karatsuba.js)
+- [쿼드 트리 압축을 해제하는 재귀 호출 알고리즘](/chapter7/QUADTREE/decompressed.js)
+- [쿼드 트리 뒤집기 문제를 해결하는 분할 정복 알고리즘](/chapter7/QUADTREE/reverse.js)
