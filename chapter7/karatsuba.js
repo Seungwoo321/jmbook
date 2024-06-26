@@ -74,5 +74,5 @@ const karatsuba = (a, b) => {
 
 console.log(karatsuba([4, 3, 2, 1], [8, 7, 6, 5]).reverse().join('')) // 7006652
 console.log(karatsuba([9, 9, 9], [9, 9, 9]).reverse().join('')) // 998001
-console.log(karatsuba([1, 2, 3, 4, 5, 6, 7, 8, 9], [9, 8, 7, 6, 5, 4, 3, 2, 1]).reverse().join(''))
+console.log(karatsuba([1, 2, 3, 4, 5, 6, 7, 8, 9], [9, 8, 7, 6, 5, 4, 3, 2, 1]).reverse().join('')) // 121932631112635269
 console.log(karatsuba([8, 9, 3, 7, 2, 4, 3, 5, 8, 4, 9, 3, 2, 8, 4].reverse(), [2, 3, 8, 9, 4, 7, 3, 2, 8, 9, 4, 7, 3, 2, 9].reverse()).reverse().join('')) // 213553048277135320552236238436
