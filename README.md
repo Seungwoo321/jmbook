@@ -25,8 +25,8 @@
 
 - [재귀호출을 이용한 이항 계수의 계산](/chapter8/bino.js)
 - [메모이제이션을 이용한 이항 계수의 계산](/chapter8/bino2.js)
-- [메모이제이션의 사용 예]
-- [외발 뛰기 (문제 ID: JUMPGAME,  난이도: 하) - 재귀 호출 알고리즘]
-- [외발 뛰기 (문제 ID: JUMPGAME,  난이도: 하) - 동적 계획법 알고리즘]
+- [메모이제이션의 사용 예](/chapter8/memoizationPattern.js)
+- [외발 뛰기 (문제 ID: JUMPGAME,  난이도: 하) - 재귀 호출 알고리즘](/chapter8/JUMPGAME/jump.js)
+- [외발 뛰기 (문제 ID: JUMPGAME,  난이도: 하) - 동적 계획법 알고리즘](/chapter8/JUMPGAME/jump2.js)
 - [와일드카드 (문제 ID: WILDCARD, 난이도: 중) - 완전 탐색 알고리즘]
 - [와일드카드 (문제 ID: WILDCARD, 난이도: 중) - 동적 계획법 알고리즘]
