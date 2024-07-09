@@ -38,3 +38,15 @@
 - [최대 증가 부분 수열 문제 (문제 ID: LIS, 난이도: 하) - 동적 계획법 알고리즘1 (입력 손보기)](/chapter8/LIS/dynamicProgramming.js)
 - [최대 증가 부분 수열 문제 (문제 ID: LIS, 난이도: 하) - 동적 계획법 알고리즘2 (시작 위치 고정하기)](/chapter8/LIS/dynamicProgramming.js)
 - [합친 LIS (문제 ID: JLIS, 난이도: 하)](/chapter8/JLIS/solution.js)
+- [원주율 외우기 (문제 ID: PI, 난이도: 하)](/chapter8/PI/solution.js)
+- [Quantization (문제 ID: QUANTIZE, 난이도: 중)](/chapter8/QUANTIZE/solution.js)
+- [타일링 방법의 수 세기 (문제 ID: TILING2, 난이도: 하)]
+- [삼각형 위의 최대 경로 개수 세기 (문제 ID: TRIPATHCNT, 난이도: 중)]
+- [우물을 기어오르는 달팽이]
+- [장마가 찾아왔다 (문제 ID: SNAIL, 난이도: 하)]
+- [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하)]
+- [직접 비대칭 타일링의 수 세기]
+- [폴리오미노 (문제 ID: POLY, 난이도: 중)]
+- [두니발 박사의 탈옥 (문제 ID: NUMB3RS, 난이도: 중)]
+
+## 9 동적 계획법 테크닉
