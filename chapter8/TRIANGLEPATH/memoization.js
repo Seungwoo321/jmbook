@@ -1,31 +1,33 @@
-const filePath = require('path').join(__dirname, 'input2');
+const filePath = require('path').join(__dirname, 'input');
 const [n, ...arr] = require('fs')
-    .readFileSync(filePath)
-    .toString()
-    .trim()
-    .split('\n');
+  .readFileSync(filePath)
+  .toString()
+  .trim()
+  .split('\n');
 
 function solution(n, triangle) {
-    // MAX_NUMBER: 한 칸에 들어갈 숫자의 최대치
-    const MAX_NUMBER = 1000
-    const cache = Array.from({ length: n }, 
-        () => Array.from({ length: n },
-            () => new Array(MAX_NUMBER * 100 + 1).fill(-1)
-        )
-    );
-    // (y, x) 위치까지 내려오기 전에 만난 숫자들의 합이 sum 일 때
-    // 맨 아래줄깢 내려가면서 얻을 수 있는 최대 경로를 반환한다.
-    const path = (y, x, sum) => {
-        // 기저 사례: 맨 아래 줄까지 도달했을 경우
-        if (y === n - 1) return sum + triangle[y][x]
-        // 메모이제이션
-        let result = cache[y][x][sum];
-        if (result !== -1) return result;
-        sum += triangle[y][x];
-        return result = Math.max(path(y + 1, x, sum), path(y + 1, x + 1, sum));
+  // MAX_NUMBER: 한 칸에 들어갈 숫자의 최대치
+  const MAX_NUMBER = 1000
+  const cache = Array.from({ length: n }, 
+    () => Array.from({ length: n },
+        () => new Array(MAX_NUMBER * 100 + 1).fill(-1)
+    )
+  );
+  // (y, x) 위치까지 내려오기 전에 만난 숫자들의 합이 sum 일 때
+  // 맨 아래줄깢 내려가면서 얻을 수 있는 최대 경로를 반환한다.
+  const path = (y, x, sum) => {
+    // 기저 사례: 맨 아래 줄까지 도달했을 경우
+    if (y === n - 1) return sum + triangle[y][x]
+    // 메모이제이션
+    if (cache[y][x][sum] !== -1) {
+        console.log('cached')
+        return cache[y][x][sum];
     }
-    return path(0, 0, 0);
-
+    sum += triangle[y][x];
+    cache[y][x][sum] = Math.max(path(y + 1, x, sum), path(y + 1, x + 1, sum));
+    return cache[y][x][sum]
+  }
+  return path(0, 0, 0);
 }
 
 console.log(solution(+n, arr.map(r => r.split(' ').map(Number))));

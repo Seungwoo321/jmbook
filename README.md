@@ -41,7 +41,7 @@
 - [원주율 외우기 (문제 ID: PI, 난이도: 하)](/chapter8/PI/solution.js)
 - [Quantization (문제 ID: QUANTIZE, 난이도: 중)](/chapter8/QUANTIZE/solution.js)
 - [타일링 방법의 수 세기 (문제 ID: TILING2, 난이도: 하)]
-- [삼각형 위의 최대 경로 개수 세기 (문제 ID: TRIPATHCNT, 난이도: 중)]
+- [삼각형 위의 최대 경로 개수 세기 (문제 ID: TRIPATHCNT, 난이도: 중)](/chapter8/TRIPATHCNT/solution.js)
 - [우물을 기어오르는 달팽이]
 - [장마가 찾아왔다 (문제 ID: SNAIL, 난이도: 하)]
 - [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하)]
