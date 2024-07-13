@@ -43,7 +43,7 @@
 - [타일링 방법의 수 세기 (문제 ID: TILING2, 난이도: 하)]
 - [삼각형 위의 최대 경로 개수 세기 (문제 ID: TRIPATHCNT, 난이도: 중)](/chapter8/TRIPATHCNT/solution.js)
 - [우물을 기어오르는 달팽이](/chapter8/climb.js)
-- [장마가 찾아왔다 (문제 ID: SNAIL, 난이도: 하)]
+- [장마가 찾아왔다 (문제 ID: SNAIL, 난이도: 하)](/chapter8/SNAIL/solution.js)
 - [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하)]
 - [직접 비대칭 타일링의 수 세기]
 - [폴리오미노 (문제 ID: POLY, 난이도: 중)]
