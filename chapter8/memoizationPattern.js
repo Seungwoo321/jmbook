@@ -9,10 +9,11 @@ const someObscureFunction = (a, b) => {
   if (false /*...*/) return // ..;
 
   // (a, b)에 대한 답을 구한적이 있으면 곧장 반환
-  const result = cache[a][b];
-  if (result !== -1) return result;
+  // 자바스크립트는 캐시할 데이터가 원시값이면 result가 캐시 객체를 참조하지 않아서 캐시 되지 않는다
+  // const result = cache[a][b];
+  if (cache[a][b] !== -1) return cache[a][b];
   // 여기에 답을 계산한다.
   // ... //
-  return result;
+  return cache[a][b];
 }
 

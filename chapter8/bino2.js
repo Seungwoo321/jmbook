@@ -3,9 +3,7 @@ const SIZE = 10000;
 
 const cache = Array.from({ length: SIZE }, () => new Array(SIZE).fill(-1));
 
-let i = 0;
 const bino2 = (n, r) => {
-  console.log(i++)
   // 기저 사례
   if (r === 0 || n === r) return 1;
   // -1이 아니라면 한 번 계산했던 값이니 곧장 반환

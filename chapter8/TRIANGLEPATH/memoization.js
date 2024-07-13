@@ -20,7 +20,7 @@ function solution(n, triangle) {
     if (y === n - 1) return sum + triangle[y][x]
     // 메모이제이션
     if (cache[y][x][sum] !== -1) {
-        console.log('cached')
+        // console.log('cached');
         return cache[y][x][sum];
     }
     sum += triangle[y][x];

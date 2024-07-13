@@ -1,4 +1,4 @@
-const filePath = require('path').join(__dirname, 'input');
+const filePath = require('path').join(__dirname, 'input2');
 const [n, ...board] = require('fs')
   .readFileSync(filePath)
   .toString()

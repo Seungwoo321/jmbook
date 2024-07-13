@@ -37,28 +37,29 @@ function solution (input) {
   }
   
   const memorize = (begin, cache = {}) => {
-
     // 기저 사례: 수열의 끝에 도달 했을 경우
     if (begin === input.length) return 0
 
     // 메모이제이션
     let result = cache[begin]
-    if (!result) result = -1;
-    if (result !== -1) return result;
-    result = Infinity;
+    if (!cache[begin]) cache[begin] = -1;
+    if (cache[begin] !== -1) {
+      // console.log('cached');
+      return cache[begin];
+    }
+    cache[begin] = Infinity;
 
     for (let L = 3; L <= 5; L ++) {
       if (begin + L <= input.length) {
-        result = Math.min(
-          result,
+        cache[begin] = Math.min(
+          cache[begin],
           memorize(begin + L, cache) + classify(begin, begin + L)
         )
       }
     }
-    return result;
+    return cache[begin];
   }
   return memorize(0)
-
 }
 
 export {

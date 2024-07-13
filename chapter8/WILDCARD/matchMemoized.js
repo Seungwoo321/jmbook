@@ -9,9 +9,9 @@ function solution (word, str) {
   // 와일드카드 패턴 W[w...]가 문자열 S[s...]에 대응되는지 여부를 반환한다.
   const matchMemoized = (cache, W, S, w, s) => {
       // 메모이제이션
-    let result = cache[w][s];
-    if (result !== -1) {
-      return result;
+    if (cache[w][s] !== -1) {
+      // console.log('cached');
+      return cache[w][s];
     }
     while (s < S.length && w < W.length && (W[w] === '?' || W[w] === S[s])) {
       w++;
@@ -20,18 +20,18 @@ function solution (word, str) {
     // 더이상 대응할 수 없으면 while문이 끝났는지 확인한다.
     // w끝에 도달해서 끝난 경우: 문자열도 끝났어야 대응됨 
     if (w === W.length) {
-      return result = +(s === S.length);
+      return cache[w][s] = +(s === S.length);
     }
     // w[pos]가 * 인 경우를 만나서 끝난 경우: *에 몇 글자를 대응해야 할지 재귀 호출하면서 확인한다.
     if (W[w] === '*') {
       for (let skip = 0; skip + s <= S.length; skip++) {
         if (matchMemoized(cache, W, S, w + 1, skip + s)) {
-          return result = 1
+          return cache[w][s] = 1
         }
       }
     }
     // 이 외의 경우에는 모두 대응되지 않는다.
-    return result = 0;
+    return cache[w][s] = 0;
       
   }
   return str.filter(S => {

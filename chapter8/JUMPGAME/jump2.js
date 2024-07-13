@@ -11,10 +11,13 @@ function solution (n, board) {
     // 기저 사례 처리
     if (y >= n || x >= n) return 0;
     if (y === n - 1 && x === n - 1) return 1;
-    let result = cache[y][x];
-    if (result !== -1) return result
-    result = board[y][x];
-    return jump(y + result, x) || jump(y, x + result);
+    if (cache[y][x] !== -1) {
+      // console.log('cached')
+      return cache[y][x];
+    }
+    const jumpSize = board[y][x];
+    cache[y][x] = jump(y + jumpSize, x) || jump(y, x + jumpSize);
+    return cache[y][x];
   }
   return jump(0, 0);
 

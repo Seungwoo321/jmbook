@@ -7,22 +7,22 @@ let [testCase, ...input] = require('fs')
 
 function solution (word, str) {
   const matchMemoized = (cache, W, S, w, s) => {
-    let result = cache[w][s];
-    if (result !== -1) {
-      return result;
+    if (cache[w][s] !== -1) {
+      // console.log('cached');
+      return cache[w][s];
     }
     if (s < S.length && w < W.length && (W[w] === '?' || W[w] === S[s])) {
-      return result = matchMemoized(cache, W, S, w + 1, s + 1);
+      return cache[w][s] = matchMemoized(cache, W, S, w + 1, s + 1);
     }
     if (w === W.length) {
-      return result = +(s === S.length);
+      return cache[w][s] = +(s === S.length);
     }
     if (W[w] === '*') {
       if (matchMemoized(cache, W, S, w +1, s) || (s < S.length && matchMemoized(cache, W, S, w, s + 1))) {
-        return result = 1
+        return cache[w][s] = 1
       }
     }
-    return result = 0;
+    return cache[w][s] = 0;
   }
   return str.filter(S => {
     const maxLen = Math.max(word.length, S.length) + 1;

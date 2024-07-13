@@ -36,18 +36,19 @@ function solution (n, s, input) {
     
     if (!(from in cache)) cache[from] = {}
     if (!(parts in cache[from])) cache[from][parts] = -1
-
-    let result = cache[from][parts];
-    if (result !== -1) return result;
-    result = Infinity;
+    if (cache[from][parts] !== -1) {
+      // console.log('cached');
+      return cache[from][parts];
+    }
+    cache[from][parts] = Infinity;
     // 조각의 길이를 변화시켜 가며 최소치를 찾는다.
     for (let partSize = 1; from + partSize <= n; partSize ++) {
-      result = Math.min(
-        result,
+      cache[from][parts] = Math.min(
+        cache[from][parts],
         minError(from, from + partSize - 1) + quantize(from + partSize, parts - 1, cache)
       );
     }
-    return result;
+    return cache[from][parts];
   }
 
   return quantize(0, s)
