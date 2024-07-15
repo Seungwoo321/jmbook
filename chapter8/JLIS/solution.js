@@ -1,9 +1,9 @@
-const filePath = require('path').join(__dirname, 'input');
-let [testCases, ...arr] = require('fs')
-    .readFileSync(filePath)
-    .toString()
-    .trim()
-    .split('\n');
+// const filePath = require('path').join(__dirname, 'input');
+// let [testCases, ...arr] = require('fs')
+//     .readFileSync(filePath)
+//     .toString()
+//     .trim()
+//     .split('\n');
 
 function soluiton (n, m, A, B) {
   const cache = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(-1));
@@ -34,12 +34,12 @@ function soluiton (n, m, A, B) {
 
 }
 
-while (testCases --) {
-  const [n, m] = arr.shift().split(' ').map(Number);
-  const a = arr.shift().split(' ').map(Number);
-  const b = arr.shift().split(' ').map(Number);
-  console.log(soluiton(n, m, a, b));
-}
+// while (testCases --) {
+//   const [n, m] = arr.shift().split(' ').map(Number);
+//   const a = arr.shift().split(' ').map(Number);
+//   const b = arr.shift().split(' ').map(Number);
+//   console.log(soluiton(n, m, a, b));
+// }
 
 export {
   soluiton
