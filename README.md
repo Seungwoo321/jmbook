@@ -44,8 +44,8 @@
 - [삼각형 위의 최대 경로 개수 세기 (문제 ID: TRIPATHCNT, 난이도: 중)](/chapter8/TRIPATHCNT/solution.js)
 - [우물을 기어오르는 달팽이](/chapter8/climb.js)
 - [장마가 찾아왔다 (문제 ID: SNAIL, 난이도: 하)](/chapter8/SNAIL/solution.js)
-- [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하)]
-- [직접 비대칭 타일링의 수 세기]
+- [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하) - tiling을 활용해서 풀기](/chapter8/ASYMTILING/solution.js)
+- [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하) - 직접 비대칭 타일링의 수 세기](/chapter8/ASYMTILING/solution2.js)
 - [폴리오미노 (문제 ID: POLY, 난이도: 중)]
 - [두니발 박사의 탈옥 (문제 ID: NUMB3RS, 난이도: 중)]
 
