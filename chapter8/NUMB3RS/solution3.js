@@ -31,7 +31,7 @@ function solution3([n, d, p], connected, t, q) {
   }
   return answer.trim()
 }
-// => T개의 실수로 각 마을에 두니발 박사가 숨어 있을 확률을 출력 
+// => search3(here, days) = 탈옥 후 days일 째에 두니발 박사가 here번 마을에 숨어 있을 확률 
 
 export {
   solution3
