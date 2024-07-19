@@ -47,6 +47,8 @@
 - [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하) - tiling을 활용해서 풀기](/chapter8/ASYMTILING/solution.js)
 - [비대칭 타일링 (문제 ID: ASYMTILING, 난이도: 하) - 직접 비대칭 타일링의 수 세기](/chapter8/ASYMTILING/solution2.js)
 - [폴리오미노 (문제 ID: POLY, 난이도: 중)](/chapter8/POLY/solution.js)
-- [두니발 박사의 탈옥 (문제 ID: NUMB3RS, 난이도: 중)]
+- [두니발 박사의 탈옥 (문제 ID: NUMB3RS, 난이도: 중) - 완전 탐색 알고리즘](/chapter8/NUMB3RS/solution.js)
+- [두니발 박사의 탈옥 (문제 ID: NUMB3RS, 난이도: 중) - 동적 계획법 알고리즘](/chapter8/NUMB3RS/solution2.js)
+- [두니발 박사의 탈옥 (문제 ID: NUMB3RS, 난이도: 중) - 동적 계획법 알고리즘2, 반대 방향에서 풀기](/chapter8/NUMB3RS/solution3.js)
 
 ## 9 동적 계획법 테크닉
